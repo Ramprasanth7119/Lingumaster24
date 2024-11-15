@@ -32,7 +32,7 @@ const Speech = () => {
     setLoading(true);
 
     try {
-      const genAI = new GoogleGenerativeAI('AIzaSyCJLR-WA7DsCAe522RmD-hNPzwtzFfefrg');
+      const genAI = new GoogleGenerativeAI('YOUR_API_KEY');
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
       const prompt = `Translate the word "${inputText}" to ${selectedLanguage}. Just give a single and best translation alone.`;
